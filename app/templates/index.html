@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <h1>Testando flask</h1>
+    <p>Chama no dano!</p>
+    <h1>Sai da frente</h1>
+    <p>{{nome}}</p>
+    <h1>Dados</h1>
+    <p>
+        Profissão: {{dados.profissao}}<br>
+        Salário: R${{dados.salario}}<br>
+    </p>
+
+    {% endblock %}

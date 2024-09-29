@@ -1,0 +1,1 @@
+web: gunicorn -b :$PORT tcc400:app

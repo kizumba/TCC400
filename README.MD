@@ -13,16 +13,11 @@
 
 # Flask
 
+executar aplicação
+flask --app tcc400 run --debug
+
+
 # Levantamento de Requisitos
-
-## Entidades
-
-* Evento
-* Assento
-* Tipo_Assento
-* Ingresso
-* Cliente
-* Promoção
 
 # Vídeos Playlist
 -  Desenvolvimento Web com Python (Flask Framework) 

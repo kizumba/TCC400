@@ -12,6 +12,14 @@ def index():
     dados = {"profissao":"Auxiliar Administrativo","salario":1500.00}
     return render_template('index.html', nome=nome, dados=dados)
 
+@app.route('/evento')
+def evento():
+    return render_template('evento.html')
+
+@app.route('/assentos')
+def assentos():
+    return render_template('assentos.html')
+
 @app.route('/contato', defaults={"nome":"usuário"})
 @app.route('/contato/<nome>')
 def contato(nome):

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<h1>Gerenciadar Evento</h1>
+
+</br>
+<hr>
+<div>
+<table border="1">
+    {% for fileira in 'ABCDEFGHIJKLMNOPQRSTU' %}
+        <tr>
+            <th>
+                {{fileira}}
+            </th>
+        {% for j in range(25) %}
+            <td>
+               {{j+1}}<a href="/assentos"><img class="imgquadrada" src="{{ url_for('static', filename='imagens/verde.png')}}"></a>
+            </td>
+        {% endfor %}
+        </tr>
+        
+    {% endfor %}
+</table>
+</div>
+<hr>
+
+{% endblock %}

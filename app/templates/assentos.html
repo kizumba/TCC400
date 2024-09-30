@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
-<h1>Gerenciar Assentos</h1>
+<h1>Gerenciador de Assentos</h1>
 
 </br>
 <hr>
 <div>
-    Testando assento
+    <p>Fileira <b>{{fileira.upper()}}</b> assento <b>{{j}}</b></p>
 </div>
 <hr>
+<a href="/evento">Voltar</a>
 
 {% endblock %}

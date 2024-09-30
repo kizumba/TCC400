@@ -16,9 +16,9 @@ def index():
 def evento():
     return render_template('evento.html')
 
-@app.route('/assentos')
-def assentos():
-    return render_template('assentos.html')
+@app.route('/assentos/<fileira>/<int:j>')
+def assentos(fileira,j):
+    return render_template('assentos.html',fileira=fileira, j=j)
 
 @app.route('/contato', defaults={"nome":"usuário"})
 @app.route('/contato/<nome>')

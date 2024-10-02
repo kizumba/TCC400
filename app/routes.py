@@ -50,3 +50,16 @@ def autenticar():
         flash("Dados inválidos.")
         flash("Senha ou Usuário errado(s)")
         return redirect('/login')
+    
+# ------------- CRUD ----------------
+@app.route('/usuarios')
+def usuarios():
+    return render_template('usuarios.html')
+
+#inserir usuário
+
+#ver usuário
+
+#editar usuário
+
+#apagar usuário

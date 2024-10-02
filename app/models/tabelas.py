@@ -11,13 +11,15 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True)
     nome = db.Column(db.String(100))
     telefone = db.Column(db.String(15), unique=True)
+    admin = db.Column(db.Boolean, default=False)
 
-    def __init__(self, nome, email, telefone, apelido, senha):
+    def __init__(self, nome, email, telefone, apelido, senha, admin):
         self.nome = nome
         self.email = email
         self.telefone = telefone
         self.apelido = apelido
         self.senha = senha
+        self.admin = admin
     
     def __repr__(self):
         return '<User %r>' % self.apelido

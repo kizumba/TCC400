@@ -19,6 +19,12 @@ flask --app tcc400 run --debug
 
 # Levantamento de Requisitos
 
+# Tutoriais
+
+- Como instalar Flask no pythonanywhere
+
+    https://www.youtube.com/watch?v=pnkdTMLCh88
+
 # Vídeos Playlist
 -  Desenvolvimento Web com Python (Flask Framework) 
 

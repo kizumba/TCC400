@@ -8,22 +8,30 @@ from flask import redirect
 @app.route('/index')
 #@app.route('/index/<nome>/<profissao>/<canal>')
 def index():
-    nome = "André L"
-    dados = {"profissao":"Auxiliar Administrativo","salario":1500.00}
-    return render_template('index.html', nome=nome, dados=dados)
+    return render_template('index.html')
 
 @app.route('/evento')
 def evento():
     return render_template('evento.html')
 
-@app.route('/assentos/<fileira>/<int:j>')
-def assentos(fileira,j):
-    return render_template('assentos.html',fileira=fileira, j=j)
+@app.route('/eventos_lista')
+def eventos_lista():
+    return render_template('eventos_lista.html')
+
+@app.route('/assentos_lista')
+def assentos_lista():
+    return render_template('assentos_lista.html')
+
+@app.route('/assento/<fileira>/<int:j>')
+def assento(fileira,j):
+    return render_template('assento.html',fileira=fileira, j=j)
 
 @app.route('/contato', defaults={"nome":"usuário"})
 @app.route('/contato/<nome>')
 def contato(nome):
     return render_template('contato.html', nome=nome)
+
+
 
 @app.route('/login')
 def login():

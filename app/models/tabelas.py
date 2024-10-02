@@ -23,6 +23,7 @@ class User(db.Model):
         return '<User %r>' % self.apelido
 
 
+'''
 class Evento(db.Model):
     __tablename__="eventos"    
 
@@ -43,7 +44,7 @@ class Assento(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     fileira = db.Column(db.Char(1))
     numero = db.Column(db.Integer)
-    ocupado = db.Column(db.Boolean, default=False)
+    livre = db.Column(db.Boolean, default=True)
     tipo_assento = db.Column(db.String(80))
     cor = db.Column(db.String(10))
 
@@ -58,7 +59,6 @@ class Ingresso(db.Model):
     tipo_ingresso = db.COlumn(db.String(80))
 
 
-# CLIENTE
 class Cliente(db.Model):
     __tablename__="clientes"
 
@@ -72,3 +72,6 @@ class Cliente(db.Model):
 
     def __repr__(self):
         return '<Cliente %r, CPF %r>' % self.nome, self.cpf
+    
+
+'''
